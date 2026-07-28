@@ -1383,29 +1383,6 @@ body.locked {
     transform: translateY(-4px) scale(1.15);
 }
 
-/* Ajuste para celulares */
-@media (max-width: 768px) {
-    .nav-logo {
-        height: 24px;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
-
-    .info-card {
-        padding: 50px 10px;
-    }
-
-    .account-box {
-        padding: 10px;
-    }
-
-    .polaroid-gallery {
-        gap: 0px;
-    }
-}
-
 input[type="radio" i] {
     accent-color: var(--primary-color);
     ;
@@ -1433,4 +1410,32 @@ input[type="radio" i] {
     color: var(--primary-color);
     margin: 0;
     font-size: 2rem;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 24px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .info-card {
+        padding: 50px 10px;
+    }
+
+    .account-box {
+        padding: 10px;
+    }
+
+    .polaroid-gallery {
+        gap: 0px;
+    }
+
+    .toast-message {
+        width: 90%;
+        padding: 15px;
+    }
 }
