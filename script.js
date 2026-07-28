@@ -165,7 +165,7 @@ if (rsvpForm) {
                 setTimeout(() => {
                     rsvpMessage.style.opacity = '0';
                     setTimeout(() => { rsvpMessage.style.display = 'none'; }, 300);
-                }, 2000);
+                }, 3000);
             })
             .catch(error => {
                 console.error('Error!', error.message);
