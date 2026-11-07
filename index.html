@@ -101,185 +101,6 @@
         </div>
     </header>
 
-    <!-- Calendar & Location -->
-    <section class="section event-details" id="detalles">
-        <div class="container text-center">
-            <h3 class="countdown-title"></h3>
-            <h2 class="section-title">Te esperamos a las 19:45 en Espacio Pilar 1</h2>
-            <p class="location-address">Chile 1963, CP: 1630<br>Pilar, Buenos Aires</p>
-            <div style="margin-top: 15px; margin-bottom: 40px;">
-                <a href="https://maps.google.com/?q=Espacio+Pilar+1,+Chile+1963,+1630+Pilar,+Provincia+de+Buenos+Aires"
-                    target="_blank" class="btn-outline">Cómo llegar</a>
-            </div>
-            <div class="transport-info mt-5">
-                <div class="info-box glass">
-                    <i class="fas fa-bus"></i>
-                    <h4>Cómo ir</h4>
-                    <p>Recomendamos venir en Uber o que organicen buses para
-                        mayor comodidad y seguridad de todos. Quien no tenga con quién juntarse, que nos avise y
-                        nosotros
-                        los contactamos entre sí.</p>
-                </div>
-                <div class="info-box glass">
-                    <i class="fas fa-parking"></i>
-                    <h4>Estacionamiento</h4>
-                    <p>Para aquellos que decidan venir en auto, el predio cuenta con estacionamiento privado y seguridad
-                        toda la noche.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section rsvp-section" id="rsvp">
-        <div class="container">
-            <h2 class="section-title">RSVP</h2>
-            <p class="text-center mb-4 text-light">Por favor, confirmanos tu asistencia.<br><strong
-                    class="highlight">Nota:</strong> Cada invitado debe llenar este formulario
-                individualmente.</p>
-
-            <form class="rsvp-form glass" id="rsvpForm" name="rsvpForm">
-                <div class="form-group">
-                    <label for="name">Nombre y apellido *</label>
-                    <input type="text" id="name" name="Nombre" required placeholder="Ej: Martín Palermo">
-                </div>
-
-                <div class="form-group">
-                    <label>¿Asistirás? *</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="Asistencia" value="yes" required> Sí, ¡ahí estaré!</label>
-                        <label><input type="radio" name="Asistencia" value="no"> No podré asistir</label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="food">Restricciones alimentarias *</label>
-                    <select id="food" name="food-select" required>
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Ninguna">Ninguna</option>
-                        <option value="Kosher">Kosher</option>
-                        <option value="Vegetariano">Vegetariano</option>
-                        <option value="Vegano">Vegano</option>
-                        <option value="Celiaco">Celíaco</option>
-                        <option value="Otra">Otra</option>
-                    </select>
-                </div>
-
-                <div class="form-group" id="other-food-group" style="display: none;">
-                    <label for="other-food">Si elegiste "Otra", indicanos cuál es tu restricción *</label>
-                    <input type="text" id="other-food" name="Restriccion" placeholder="Especificá tu restricción">
-                </div>
-
-                <!-- NUEVO CAMPO DE CANCIÓN -->
-                <div class="form-group">
-                    <label for="song">¿Qué canciones no pueden faltar?</label>
-                    <input type="text" id="song" name="Cancion" placeholder="Ej: Puedes contar conmigo">
-                </div>
-
-                <button type="submit" class="btn-primary w-100" id="submitBtn">Enviar</button>
-            </form>
-
-            <!-- Contenedor para el mensaje de éxito (oculto por defecto) -->
-            <div id="rsvp-message" class="toast-message text-center" style="display: none;">
-                <h3 id="rsvp-response-text"></h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Regalos -->
-    <section class="section" id="regalos">
-        <div class="container">
-            <div class="info-card glass text-center" style="max-width: 800px; margin: 0 auto;">
-                <i class="fas fa-gift fa-3x mb-3"></i>
-                <h3>Regalos</h3>
-                <p>Estamos muy felices de compartir este momento con ustedes. Si desean hacernos un regalo, pueden
-                    ayudarnos a construir nuestro hogar o hacer realidad nuestra luna de miel. ¡Gracias por
-                    acompañarnos en este día tan especial!
-                </p>
-                <div class="text-center" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <button class="btn-outline mt-3" onclick="toggleGifts()">Ver datos bancarios</button>
-                    <a href="https://www.wishbob.com/nahlwfpoij" target="_blank" class="btn-outline mt-3">Ver lista de
-                        regalos</a>
-                </div>
-                <div class="gifts-details" id="giftsDetails">
-                    <div class="account-box">
-                        <p>
-                            <b>Caja de ahorro en dólares (USD)</b> <br>
-                            Martin Daniel Sacca <br>
-
-                            CBU: 00703275-31004017710525 <br>
-
-                            ALIAS: ChiarayMartin <br>
-
-                            Banco: Galicia
-                        </p>
-                    </div>
-                    <div class="account-box">
-                        <p>
-                            <b>Caja de ahorro en pesos ($)</b><br>
-
-                            Martin Daniel Sacca <br>
-
-                            CBU: 00703275-30004071273610 <br>
-
-                            ALIAS: msacca <br>
-
-                            Banco: Galicia
-                        </p>
-                    </div>
-                    <div class="account-box">
-                        <p>
-                            <b>Cuenta en España (EUR) </b> <br>
-
-                            Beneficiario: Chiara Fabricante <br>
-
-                            IBAN: ES51 1583 0001 1590 6817 1473 <br>
-
-                            Código BIC o SWIFT: REVOESM2 <br>
-
-                            Nombre y dirección de la entidad bancaria: Revolut Bank UAB <br>
-
-                            Calle Príncipe de Vergara 132, 4 planta, 28002, Madrid, Spain <br>
-
-                            BIC del banco corresponsal: CHASDEFX <br>
-
-                            Bizum: +34 619 689 848
-
-                        </p>
-                    </div>
-                    <div class="account-box">
-                        <p>
-                            <b>Cuenta en Estados Unidos (USD)</b> <br>
-                            Nro cuenta: 898142806620 <br>
-                            Wire transfer/ruta: 026009593 <br>
-
-                            Tipo cuenta: corriente <br>
-
-                            Calle: Harbor Way 21204, Miami, FL <br>
-
-                            CP: 33180
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Dress Code -->
-    <section class="section" id="dresscode">
-        <div class="container">
-            <div class="info-card glass text-center" style="max-width: 800px; margin: 0 auto;">
-                <i class="fas fa-user-tie fa-3x mb-3"></i>
-                <h3>Dress Code</h3>
-                <p><b style="margin-bottom: 5px;">Vestimenta elegante</b></p>
-                <p>(Las zapatillas están invitadas recién a partir de medianoche)
-                </p>
-                <div class="text-center">
-                    <a href="https://pin.it/16s2jaRrH" target="_blank" class="btn-outline mt-3">¡Mirá ejemplos acá!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Our Story - Polaroid Gallery -->
     <section class="section historia-section" id="historia">
         <div class="container">
@@ -387,6 +208,180 @@
         </div>
     </section>
 
+    <!-- Calendar & Location -->
+    <section class="section event-details" id="detalles">
+        <div class="container text-center">
+            <h3 class="countdown-title"></h3>
+            <h2 class="section-title">Te esperamos a las 19:45 en Espacio Pilar 1</h2>
+            <p class="location-address">Chile 1963, CP: 1630<br>Pilar, Buenos Aires</p>
+            <div style="margin-top: 15px; margin-bottom: 40px;">
+                <a href="https://maps.google.com/?q=Espacio+Pilar+1,+Chile+1963,+1630+Pilar,+Provincia+de+Buenos+Aires"
+                    target="_blank" class="btn-outline">Cómo llegar</a>
+            </div>
+            <div class="transport-info mt-5">
+                <div class="info-box glass">
+                    <i class="fas fa-bus"></i>
+                    <h4>Cómo ir</h4>
+                    <p>Recomendamos venir en Uber o que organicen buses para
+                        mayor comodidad y seguridad de todos. Quien no tenga con quién juntarse, que nos avise y
+                        nosotros
+                        los contactamos entre sí.</p>
+                </div>
+                <div class="info-box glass">
+                    <i class="fas fa-parking"></i>
+                    <h4>Estacionamiento</h4>
+                    <p>Para aquellos que decidan venir en auto, el predio cuenta con estacionamiento privado y seguridad
+                        toda la noche.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+        <div class="container">
+            <h2 class="section-title">RSVP</h2>
+            <p class="text-center mb-4 text-light">Por favor, confirmanos tu asistencia.<br><strong
+                    class="highlight">Nota:</strong> Cada invitado debe llenar este formulario
+                individualmente.</p>
+
+            <form class="rsvp-form glass" id="rsvpForm" name="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Nombre y apellido *</label>
+                    <input type="text" id="name" name="Nombre" required placeholder="Ej: Martín Palermo">
+                </div>
+
+                <div class="form-group">
+                    <label>¿Asistirás? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="Asistencia" value="yes" required> Sí, ¡ahí estaré!</label>
+                        <label><input type="radio" name="Asistencia" value="no"> No podré asistir</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="food">Restricciones alimentarias *</label>
+                    <select id="food" name="food-select" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Ninguna">Ninguna</option>
+                        <option value="Kosher">Kosher</option>
+                        <option value="Vegetariano">Vegetariano</option>
+                        <option value="Vegano">Vegano</option>
+                        <option value="Celiaco">Celíaco</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="other-food-group" style="display: none;">
+                    <label for="other-food">Si elegiste "Otra", indicanos cuál es tu restricción *</label>
+                    <input type="text" id="other-food" name="Restriccion" placeholder="Especificá tu restricción">
+                </div>
+
+                <!-- NUEVO CAMPO DE CANCIÓN -->
+                <div class="form-group">
+                    <label for="song">¿Qué canciones no pueden faltar?</label>
+                    <input type="text" id="song" name="Cancion" placeholder="Ej: Puedes contar conmigo">
+                </div>
+
+                <button type="submit" class="btn-primary w-100" id="submitBtn">Enviar</button>
+            </form>
+
+            <!-- Contenedor para el mensaje de éxito (oculto por defecto) -->
+            <div id="rsvp-message" class="toast-message text-center" style="display: none;">
+                <h3 id="rsvp-response-text"></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regalos -->
+    <section class="section" id="regalos">
+        <div class="container">
+            <div class="info-card glass text-center" style="max-width: 800px; margin: 0 auto;">
+                <i class="fas fa-gift fa-3x mb-3"></i>
+                <h3>Regalos</h3>
+                <p>Estamos muy felices de compartir este momento con ustedes. Si desean hacernos un regalo, pueden
+                    ayudarnos a construir nuestro hogar o hacer realidad nuestra luna de miel. ¡Gracias por
+                    acompañarnos en este día tan especial!
+                </p>
+                <div class="text-center" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <button class="btn-outline mt-3" onclick="toggleGifts()">Ver datos bancarios</button>
+                    <a href="https://www.wishbob.com/nahlwfpoij" target="_blank" class="btn-outline mt-3">Ver lista de
+                        regalos</a>
+                </div>
+                <div class="gifts-details" id="giftsDetails">
+                    <div class="account-box">
+                        <p>
+                            <b>Caja de ahorro en dólares (USD)</b> <br>
+                            
+                            CBU: 00000000-00000000000000 <br>
+
+                            ALIAS: ChiarayMartinUSD <br>
+
+                            Banco: Galicia
+                        </p>
+                    </div>
+                    <div class="account-box">
+                        <p>
+                            <b>Caja de ahorro en pesos ($)</b><br>
+
+                            CBU: 00000000-00000000000000 <br>
+
+                            ALIAS: ChiarayMartinARG <br>
+
+                            Banco: Galicia
+                        </p>
+                    </div>
+                    <div class="account-box">
+                        <p>
+                            <b>Cuenta en España (EUR) </b> <br>
+
+                            IBAN: ES00 0000 0000 0000 0000 0000 <br>
+
+                            Código BIC o SWIFT: ABCDEFG1 <br>
+
+                            Nombre y dirección de la entidad bancaria: Revolut Bank UAB <br>
+
+                            Calle Príncipe de Vergara 132, 4 planta, 28002, Madrid, Spain <br>
+
+                            BIC del banco corresponsal: ABCDEFGH <br>
+
+                            Bizum: +34 000 000 000
+
+                        </p>
+                    </div>
+                    <div class="account-box">
+                        <p>
+                            <b>Cuenta en Estados Unidos (USD)</b> <br>
+                            Nro cuenta: 00000000000 <br>
+                            Wire transfer/ruta: 000000000 <br>
+
+                            Tipo cuenta: corriente <br>
+
+                            Calle: Harbor Way 21204, Miami, FL <br>
+
+                            CP: 33180
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code -->
+    <section class="section" id="dresscode">
+        <div class="container">
+            <div class="info-card glass text-center" style="max-width: 800px; margin: 0 auto;">
+                <i class="fas fa-user-tie fa-3x mb-3"></i>
+                <h3>Dress Code</h3>
+                <p><b style="margin-bottom: 5px;">Vestimenta elegante</b></p>
+                <p>(Las zapatillas están invitadas recién a partir de medianoche)
+                </p>
+                <div class="text-center">
+                    <a href="https://pin.it/16s2jaRrH" target="_blank" class="btn-outline mt-3">¡Mirá ejemplos acá!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- + Info -->
     <section class="section guide-section" id="guia">
         <div class="container">
@@ -439,11 +434,11 @@
                     <img src="isotipo.png" alt="C&M" class="nav-logo">
                 </a>
             </li>
+            <li><a href="#historia"><i class="fas fa-book-open"></i> <span>Nosotros</span></a></li>
             <li><a href="#detalles"><i class="fas fa-map-marker-alt"></i> <span>Dónde</span></a></li>
             <li><a href="#rsvp"><i class="fas fa-envelope-open-text"></i> <span>RSVP</span></a></li>
             <li><a href="#regalos"><i class="fas fa-gift"></i> <span>Regalos</span></a></li>
             <li><a href="#dresscode"><i class="fas fa-user-tie"></i> <span>Dress Code</span></a></li>
-            <li><a href="#historia"><i class="fas fa-book-open"></i> <span>Nosotros</span></a></li>
             <li><a href="#guia"><i class="fas fa-plus-circle"></i> <span>+ Info</span></a></li>
         </ul>
     </nav>
